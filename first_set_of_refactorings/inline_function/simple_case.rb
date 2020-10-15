@@ -28,7 +28,7 @@ module FirstSetOfRefactorings
         def rating(a_driver)
           a_driver.number_of_late_deliveries > 5 ? 2 : 1
         end
-       end
+      end
 
       class Tests
         A_DRIVER = proc do |number_of_late_deliveries|

@@ -18,6 +18,7 @@ def test_directory(directory)
 end
 
 def test_file(file)
+  file = "./#{file}" unless file.match?(%r{^\./})
   require file
 
   module_directories = file.split(%r{[/.]})[1..-2]
