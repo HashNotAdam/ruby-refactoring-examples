@@ -2,7 +2,7 @@
 
 require "ostruct"
 
-# Example: Reassigning A Local Variable
+# Example: Reassigning a local variable
 # @see https://memberservices.informit.com/my_account/webedition/9780135425664/html/extractfunction.html
 
 # Goal: extract single responsibilities into their own functions
@@ -244,10 +244,6 @@ module FirstSetOfRefactorings
       end
 
       class Tests
-        def self.call
-          new.call
-        end
-
         INVOICE = OpenStruct.new(
           customer: "Adam",
           due_date: nil,
