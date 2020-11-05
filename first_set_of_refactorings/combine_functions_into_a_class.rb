@@ -44,7 +44,7 @@ module FirstSetOfRefactorings
       end
 
       def base_charge(reading)
-        base_rate(reading[:month], reading[:year]) * reading[:quantity];
+        base_rate(reading[:month], reading[:year]) * reading[:quantity]
       end
     end
 

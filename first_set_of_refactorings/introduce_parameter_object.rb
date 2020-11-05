@@ -173,7 +173,7 @@ module FirstSetOfRefactorings
       end
 
       def readings_outside_range(station, range)
-        station[:readings].select { |reading| range.include?(reading[:temp]) }
+        station[:readings].reject { |reading| range.include?(reading[:temp]) }
       end
     end
 

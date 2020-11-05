@@ -148,7 +148,7 @@ module FirstSetOfRefactorings
         discount = [quantity - product.discount_threshold, 0].max *
           product.base_price * product.discount_rate
         price_data = {
-          base_price: base_price, quantity: quantity, discount: discount
+          base_price: base_price, quantity: quantity, discount: discount,
         }
         apply_shipping(price_data, shipping_method)
       end
